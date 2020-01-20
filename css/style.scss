@@ -57,6 +57,30 @@ nav ul a.nav__links {
     color: transparent;
   }
 }
+.sidenav li > a.sidenav__links {
+  font-size: 1.5rem !important;
+  transition: ease-in transform 0.4s;
+  i {
+    transition: transform 0.4s;
+  }
+  i:hover {
+    transform: scale(1.3);
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.sidenav li > a.btn {
+  transition: all 0.4s;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
 
 @media only screen and (max-width: 400px) {
   nav.brand-logo {

@@ -66,6 +66,48 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
   color: transparent;
 }
 
+.sidenav li > a.sidenav__links {
+  font-size: 1.5rem !important;
+  -webkit-transition: ease-in transform 0.4s;
+  transition: ease-in transform 0.4s;
+}
+
+.sidenav li > a.sidenav__links i {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.sidenav li > a.sidenav__links i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.sidenav li > a.sidenav__links:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sidenav li > a.btn {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sidenav li > a.btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav li > a.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (max-width: 400px) {
   nav.brand-logo {
     font-size: 1rem;

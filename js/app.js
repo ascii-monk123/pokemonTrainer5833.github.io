@@ -111,3 +111,8 @@ particlesJS('particles-js', {
   },
   retina_detect: true
 });
+
+$(document).ready(function() {
+  //sidenav trigger
+  $('.sidenav').sidenav();
+});
