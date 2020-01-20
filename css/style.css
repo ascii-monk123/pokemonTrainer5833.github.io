@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5% !important;
+}
+
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/hero__img-1.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero__img-1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
+  font-size: 2rem !important;
 }
 
 canvas {
@@ -37,5 +44,31 @@ nav .main__navigation {
 
 .social__link--github:hover {
   color: #c32aa3;
+}
+
+nav a.brand-logo {
+  margin-top: 0px !important;
+}
+
+nav ul a {
+  font-size: 1.2rem;
+}
+
+nav ul a.nav__links {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav ul a.nav__links:hover, nav ul a.nav__links:active {
+  background-image: -webkit-gradient(linear, left top, right top, from(pink), to(aqua));
+  background-image: linear-gradient(to right, pink, aqua);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media only screen and (max-width: 400px) {
+  nav.brand-logo {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
