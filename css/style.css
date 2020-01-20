@@ -1,0 +1,41 @@
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/hero__img-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero__img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+nav .main__navigation {
+  border-bottom: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.social__link {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.social__link--facebook:hover {
+  color: #3b5998;
+}
+
+.social__link--twitter:hover {
+  color: #1da1f2;
+}
+
+.social__link--github:hover {
+  color: #c32aa3;
+}
+/*# sourceMappingURL=style.css.map */
