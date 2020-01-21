@@ -115,6 +115,13 @@ particlesJS('particles-js', {
 $(document).ready(function() {
   //sidenav trigger
   $('.sidenav').sidenav();
+  //Preloader
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
 
   const dataArr = [
     `I'm a Web Developer`,
