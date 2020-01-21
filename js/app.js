@@ -115,4 +115,36 @@ particlesJS('particles-js', {
 $(document).ready(function() {
   //sidenav trigger
   $('.sidenav').sidenav();
+
+  const dataArr = [
+    `I'm a Web Developer`,
+    `I'm a Web Designer`,
+    `I'm a Winter Lover`,
+    `I'm a Coffee Addict`
+  ];
+  let data = dataArr[0];
+  let startIndex = 0;
+  const textContainer = document.querySelector('.typeContainer');
+  let ctr = 0;
+  const type = () => {
+    if (ctr <= data.length - 1) {
+      textContainer.innerHTML += data.charAt(ctr);
+      ctr++;
+      setTimeout(() => {
+        type();
+      }, 50);
+    } else {
+      ctr = 0;
+      if (startIndex === dataArr.length - 1) startIndex = 0;
+      else startIndex++;
+      data = dataArr[startIndex];
+      setTimeout(() => {
+        textContainer.innerHTML = '';
+      }, 2500);
+      setTimeout(() => {
+        type();
+      }, 3000);
+    }
+  };
+  type();
 });
