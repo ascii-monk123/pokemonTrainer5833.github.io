@@ -116,7 +116,7 @@ $(document).ready(function() {
   //sidenav trigger
   $('.sidenav').sidenav();
   //Preloader
-  preloaderFadeOutTime = 500;
+  preloaderFadeOutTime = 5000;
   function hidePreloader() {
     var preloader = $('.spinner-wrapper');
     preloader.fadeOut(preloaderFadeOutTime);
@@ -154,4 +154,8 @@ $(document).ready(function() {
     }
   };
   type();
+});
+$(window).load(function() {
+  // PAGE IS FULLY LOADED
+  // FADE OUT YOUR OVERLAYING DIV
 });
