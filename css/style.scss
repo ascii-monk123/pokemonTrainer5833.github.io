@@ -1,3 +1,4 @@
+//these are the styles for the home page
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700&display=swap');
 body {
   font-family: 'Montserrat', sans-serif;
@@ -24,6 +25,7 @@ nav .main__navigation {
   border-bottom: none;
   box-shadow: none;
 }
+//the social links
 .social__link {
   transition: color 0.5s;
   &--facebook {
@@ -42,6 +44,7 @@ nav .main__navigation {
     }
   }
 }
+//the navbar elements
 nav a.brand-logo {
   margin-top: 0px !important;
 }
@@ -57,6 +60,7 @@ nav ul a.nav__links {
     color: transparent;
   }
 }
+//side nav configurations
 .sidenav li > a.sidenav__links {
   font-size: 1.5rem !important;
   transition: ease-in transform 0.4s;
@@ -81,9 +85,14 @@ nav ul a.nav__links {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
+//the hero image container
 
 .hero__container {
   margin: 7rem 0 0 0;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
   h1,
   h4 {
     font-weight: 100;
@@ -94,6 +103,19 @@ nav ul a.nav__links {
   h3 {
     font-weight: 100;
     font-size: 2.5rem;
+  }
+}
+
+//these are the animations for the home page
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
