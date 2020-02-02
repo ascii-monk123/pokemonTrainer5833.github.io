@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5% !important;
+}
+
+header {
+  font-size: 2rem !important;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.81)),
+    url('../img/hero__img-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  div.hero__img--container {
+    margin-top: 8rem !important;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+//the social links
+.social__link {
+  transition: color 0.5s;
+  &--facebook {
+    &:hover {
+      color: #3b5998;
+    }
+  }
+  &--twitter {
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+  &--github {
+    &:hover {
+      color: #c32aa3;
+    }
+  }
+}
+
+//the navbar elements
+nav a.brand-logo {
+  margin-top: 0px !important;
+}
+nav ul a {
+  font-size: 1.2rem;
+}
+nav ul a.nav__links {
+  transition: all 0.5s;
+  &:hover,
+  &:active {
+    background-image: linear-gradient(to right, pink, aqua);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+//side nav configurations
+.sidenav li > a.sidenav__links {
+  font-size: 1.5rem !important;
+  transition: ease-in transform 0.4s;
+  i {
+    transition: transform 0.4s;
+  }
+  i:hover {
+    transform: scale(1.3);
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.sidenav li > a.btn {
+  transition: all 0.4s;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+//these are the media queries
+@media only screen and (max-width: 400px) {
+  header {
+    height: 83vh;
+    div.hero__img--container {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

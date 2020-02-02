@@ -116,7 +116,7 @@ $(document).ready(function() {
   //sidenav trigger
   $('.sidenav').sidenav();
   //Preloader
-  preloaderFadeOutTime = 5000;
+  preloaderFadeOutTime = 6000;
   function hidePreloader() {
     var preloader = $('.spinner-wrapper');
     preloader.fadeOut(preloaderFadeOutTime);

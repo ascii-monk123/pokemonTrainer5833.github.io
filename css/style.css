@@ -135,7 +135,7 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
 .spinner {
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: #fff;
   position: absolute;
   top: 48%;
   left: 48%;
@@ -149,7 +149,7 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff6347;
+  background-color: black;
   z-index: 999999;
 }
 
