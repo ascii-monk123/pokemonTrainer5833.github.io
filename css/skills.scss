@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700&display=swap');
-
+$color-white: #fff;
+$color-black: #000;
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5% !important;
@@ -80,6 +81,43 @@ nav ul a.nav__links {
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+//the slide button
+.slide__to--btn {
+  animation-name: hvr-pulse;
+  animation-duration: 1s;
+
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.btn__rounded {
+  font-weight: 400;
+  width: 12rem;
+  border-radius: 1000px;
+  border: 1px solid rgba($color-white, 0.7);
+  display: block;
+  margin: 5rem auto 0 auto;
+  background: rgba($color-white, 0.7);
+  transition: all 0.3s;
+  text-align: center;
+  color: $color-black;
+  &:hover,
+  &:active {
+    border: 1px solid rgba($color-white, 1);
+    background: rgba($color-white, 1);
+  }
+}
+
+//these are the keyframes
+@keyframes hvr-pulse {
+  35% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 
