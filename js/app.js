@@ -6,27 +6,27 @@ particlesJS('particles-js', {
       value: 30,
       density: {
         enable: true,
-        value_area: 800
-      }
+        value_area: 800,
+      },
     },
     color: {
-      value: '#ffffff'
+      value: '#ffffff',
     },
     shape: {
       type: 'image',
       stroke: {
         width: 1,
-        color: '#fff'
+        color: '#fff',
       },
       polygon: {
-        nb_sides: 5
+        nb_sides: 5,
       },
       image: {
         src:
           'http://www.dynamicdigital.us/wp-content/uploads/2013/02/starburst_white_300_drop_2.png',
         width: 100,
-        height: 100
-      }
+        height: 100,
+      },
     },
     opacity: {
       value: 0.7,
@@ -35,8 +35,8 @@ particlesJS('particles-js', {
         enable: false,
         speed: 1,
         opacity_min: 0.1,
-        sync: false
-      }
+        sync: false,
+      },
     },
     size: {
       value: 5,
@@ -45,15 +45,15 @@ particlesJS('particles-js', {
         enable: false,
         speed: 20,
         size_min: 0.1,
-        sync: false
-      }
+        sync: false,
+      },
     },
     line_linked: {
       enable: false,
       distance: 50,
       color: '#ffffff',
       opacity: 0.6,
-      width: 1
+      width: 1,
     },
     move: {
       enable: true,
@@ -66,53 +66,53 @@ particlesJS('particles-js', {
       attract: {
         enable: true,
         rotateX: 300,
-        rotateY: 1200
-      }
-    }
+        rotateY: 1200,
+      },
+    },
   },
   interactivity: {
     detect_on: 'canvas',
     events: {
       onhover: {
         enable: true,
-        mode: 'bubble'
+        mode: 'bubble',
       },
       onclick: {
         enable: true,
-        mode: 'repulse'
+        mode: 'repulse',
       },
-      resize: true
+      resize: true,
     },
     modes: {
       grab: {
         distance: 150,
         line_linked: {
-          opacity: 1
-        }
+          opacity: 1,
+        },
       },
       bubble: {
         distance: 200,
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 3
+        speed: 3,
       },
       repulse: {
         distance: 200,
-        duration: 0.2
+        duration: 0.2,
       },
       push: {
-        particles_nb: 4
+        particles_nb: 4,
       },
       remove: {
-        particles_nb: 2
-      }
-    }
+        particles_nb: 2,
+      },
+    },
   },
-  retina_detect: true
+  retina_detect: true,
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   //sidenav trigger
   $('.sidenav').sidenav();
   //Preloader
@@ -127,7 +127,7 @@ $(document).ready(function() {
     `I'm a Web Developer`,
     `I'm a Web Designer`,
     `I'm a Winter Lover`,
-    `I'm a Coffee Addict`
+    `I'm a Coffee Addict`,
   ];
   let data = dataArr[0];
   let startIndex = 0;

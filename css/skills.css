@@ -22,6 +22,13 @@ header div.hero__img--container p {
   font-size: 1.3rem;
 }
 
+.gradient__text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00cec9), to(#546de5));
+  background-image: linear-gradient(to right, #00cec9, #546de5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .social__link {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -128,6 +135,76 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
 .btn__rounded:hover, .btn__rounded:active {
   border: 1px solid white;
   background: white;
+}
+
+section.skill__details {
+  margin-top: 4rem;
+}
+
+.hover__img {
+  position: relative;
+  cursor: pointer;
+  /* &--html5 {
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-black;
+      width: 100%;
+      height: 0;
+    }
+  }
+  */
+}
+
+.card__heading-gradient {
+  font-size: 3rem;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fd79a8), to(#00cec9));
+  background-image: linear-gradient(to right bottom, #fd79a8, #00cec9);
+  -webkit-background-clip: text;
+}
+
+.skills__card {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.skills__card:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.card .card-image {
+  overflow: hidden;
+  height: 13rem;
+}
+
+.card-action a.wiki__link {
+  font-size: 1.2rem !important;
+}
+
+.card-action a.wiki__link:link, .card-action a.wiki__link:visited {
+  color: transparent !important;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fd79a8), to(#00cec9));
+  background-image: linear-gradient(to right bottom, #fd79a8, #00cec9);
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card-action a.wiki__link:active, .card-action a.wiki__link:visited {
+  color: transparent !important;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00cec9), to(#fd79a8));
+  background-image: linear-gradient(to right bottom, #00cec9, #fd79a8);
+}
+
+.card-action i.fa-arrow-right {
+  font-weight: 100;
+}
+
+.mtop4 {
+  margin-top: 5rem;
 }
 
 @-webkit-keyframes hvr-pulse {
