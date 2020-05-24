@@ -17,12 +17,13 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/skills.css" />
   </head>
   <body>
     <!--the header section-->
     <header class="skills__header section">
-      <nav class="transparent main__navigation navbar-fixed" style="border-bottom:0px; box-shadow:none;">
+      <nav class="transparent main__navigation navbar-fixed" style="border-bottom:0px; box-shadow:none;" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo">Skills<span class="purple-text text-darken-2">.</span></a>
@@ -65,21 +66,21 @@
         <li><div class="divider"></div></li>
         <li><a href="#" class="btn teal lighten-2 white-text btn-animation waves-effect waves-light">Newsletter</a></li>
        </ul>
-       <div class="hero__img--container">
-        <h2 class="center hero__img--text">My Skills !</h2>
+       <div class="hero__img--container" data-aos="fade-right">
+        <h2 class="center hero__img--text" data-aos="fade-left" data-aos-duration="2000">My Skills !</h2>
         <br>
-        <p class="center">Wanna know what i have learned till ,now scroll down !!!</p>
+        <p class="center" data-aos="fade-right" data-aos-duration="2000">Wanna know what i have learned till ,now scroll down !!!</p>
        </div>
-      <a class="slide__to--btn btn__rounded" href="#skill__details"><i class="fa fa-angle-double-down"></i></a>
+      <div data-aos="fade-up" data-aos-duration="1000"><a class="slide__to--btn btn__rounded" href="#skill__details" ><i class="fa fa-angle-double-down"></i></a></div>
     </header>
 
     <!--The skill details section-->
     <section class="skill__details section" id="skill__details">
-      <h2 class="center gradient__text responsive__header">What I Know</h2>
+      <h2 class="center gradient__text responsive__header" data-aos="fade-right" data-aos-duration="1000">What I Know</h2>
       <div class="container mtop4">
          <div class="row">
             <div class="col s12 m4">
-               <div class="card skills__card">
+               <div class="card skills__card" data-aos="fade-right" data-aos-duration="1000">
                   <div class="card-image hover__img hover__img--html5">
                      <img src="img/html5.png">
                   </div>
@@ -92,7 +93,7 @@
                </div>
             </div>
           <div class="col s12 m4">
-            <div class="card skills__card">
+            <div class="card skills__card" data-aos="fade-up" data-aos-duration="1000" >
               <div class="card-image hover__img hover__img--html5">
                  <img src="img/css.png" class="responsive-img">
               </div>
@@ -106,7 +107,7 @@
           </div>
 
           <div class="col s12 m4">
-            <div class="card skills__card">
+            <div class="card skills__card" data-aos="fade-left" data-aos-duration="1000">
               <div class="card-image hover__img hover__img--html5">
                  <img src="img/skills_bootstrap.png" class="responsive-img">
               </div>
@@ -122,7 +123,7 @@
    <!--row 2-->
          <div class="row">
           <div class="col s12 m4">
-             <div class="card skills__card">
+             <div class="card skills__card" data-aos="fade-right" data-aos-duration="1000">
                 <div class="card-image hover__img hover__img--html5">
                    <img src="img/skills_javascript.jpg">
                 </div>
@@ -135,7 +136,7 @@
              </div>
           </div>
         <div class="col s12 m4">
-          <div class="card skills__card">
+          <div class="card skills__card" data-aos="fade-up" data-aos-duration="1000">
             <div class="card-image hover__img hover__img--html5">
                <img src="img/materialize.png" class="responsive-img">
             </div>
@@ -149,7 +150,7 @@
         </div>
 
         <div class="col s12 m4">
-          <div class="card skills__card">
+          <div class="card skills__card" data-aos="fade-left" data-aos-duration="1000">
             <div class="card-image hover__img hover__img--html5">
                <img src="img/skills_c.jpg" class="responsive-img">
             </div>
@@ -166,7 +167,7 @@
        <!--ROW 3-->
        <div class="row">
         <div class="col s12 m4">
-           <div class="card skills__card">
+           <div class="card skills__card" data-aos="fade-right" data-aos-duration="1000">
               <div class="card-image hover__img hover__img--html5">
                  <img src="img/java.jpg">
               </div>
@@ -179,7 +180,7 @@
            </div>
         </div>
       <div class="col s12 m4">
-        <div class="card skills__card">
+        <div class="card skills__card" data-aos="fade-up" data-aos-duration="1000">
           <div class="card-image hover__img hover__img--html5">
              <img src="img/skills_react.jpg" class="responsive-img">
           </div>
@@ -193,7 +194,7 @@
       </div>
 
       <div class="col s12 m4">
-        <div class="card skills__card">
+        <div class="card skills__card" data-aos="fade-left" data-aos-duration="1000">
           <div class="card-image hover__img hover__img--html5">
              <img src="img/skills_typescript.png" class="responsive-img">
           </div>
@@ -210,7 +211,7 @@
      <!--row 4-->
      <div class="row">
       <div class="col s12 m4">
-         <div class="card skills__card">
+         <div class="card skills__card" data-aos="fade-right">
             <div class="card-image hover__img hover__img--html5">
                <img src="img/skills_sass.png">
             </div>
@@ -233,6 +234,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/skills.js"></script>
   </body>
 </html>

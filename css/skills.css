@@ -236,5 +236,11 @@ section.skill__details {
   header div.hero__img--container p {
     font-size: 1rem;
   }
+  .skill__details {
+    margin-top: 0.3rem !important;
+  }
+  .skill__details h2 {
+    font-size: 3rem !important;
+  }
 }
 /*# sourceMappingURL=skills.css.map */
