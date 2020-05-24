@@ -115,6 +115,8 @@ particlesJS('particles-js', {
 $(document).ready(function () {
   //sidenav trigger
   $('.sidenav').sidenav();
+  //aos trigger
+  AOS.init();
   //Preloader
   preloaderFadeOutTime = 6000;
   function hidePreloader() {
