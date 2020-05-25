@@ -141,7 +141,7 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
 }
 
 .button__container a {
-  z-index: 1000 !important;
+  z-index: 10 !important;
   margin: 1rem !important;
 }
 
