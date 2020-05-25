@@ -126,10 +126,10 @@ $(document).ready(function () {
   hidePreloader();
 
   const dataArr = [
-    `I'm a Web Developer`,
-    `I'm a Web Designer`,
-    `I'm a Winter Lover`,
-    `I'm a Coffee Addict`,
+    `I'm a web developer`,
+    `I'm a web designer`,
+    `I'm a winter lover`,
+    `I'm a coffee lover`,
   ];
   let data = dataArr[0];
   let startIndex = 0;
@@ -148,7 +148,7 @@ $(document).ready(function () {
       else startIndex++;
       data = dataArr[startIndex];
       setTimeout(() => {
-        textContainer.innerHTML = '';
+        textContainer.innerHTML = '&nbsp;';
       }, 2500);
       setTimeout(() => {
         type();

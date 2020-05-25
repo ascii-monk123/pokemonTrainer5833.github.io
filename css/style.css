@@ -128,8 +128,21 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
 }
 
 .hero__container h3 {
-  font-weight: 100;
-  font-size: 2.5rem;
+  font-weight: 200;
+  font-size: 2.2rem;
+}
+
+.mtop20 {
+  margin-top: 65px;
+}
+
+.button__container {
+  margin-top: 5rem;
+}
+
+.button__container a {
+  z-index: 1000 !important;
+  margin: 1rem !important;
 }
 
 .spinner {
@@ -217,11 +230,11 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
     font-size: 1rem;
   }
   .hero__container h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 300;
   }
   .hero__container h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -101,11 +101,20 @@ nav ul a.nav__links {
     font-size: 6rem;
   }
   h3 {
-    font-weight: 100;
-    font-size: 2.5rem;
+    font-weight: 200;
+    font-size: 2.2rem;
   }
 }
-
+.mtop20 {
+  margin-top: 65px;
+}
+.button__container {
+  margin-top: 5rem;
+  a {
+    z-index: 1000 !important;
+    margin: 1rem !important;
+  }
+}
 //this is for the spinner
 .spinner {
   width: 40px;
@@ -182,11 +191,11 @@ nav ul a.nav__links {
   }
   .hero__container {
     h1 {
-      font-size: 4rem;
+      font-size: 3.8rem;
       font-weight: 300;
     }
     h3 {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
   }
 }
