@@ -118,7 +118,7 @@ $(document).ready(function () {
   //aos trigger
   AOS.init();
   //Preloader
-  preloaderFadeOutTime = 6000;
+  preloaderFadeOutTime = 4000;
   function hidePreloader() {
     var preloader = $('.spinner-wrapper');
     preloader.fadeOut(preloaderFadeOutTime);
