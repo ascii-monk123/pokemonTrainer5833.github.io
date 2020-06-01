@@ -168,6 +168,7 @@ section.skill__details {
 .skills__card {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  margin: 30px;
 }
 
 .skills__card:hover {
@@ -177,7 +178,7 @@ section.skill__details {
 
 .card .card-image {
   overflow: hidden;
-  height: 13rem;
+  height: 17rem;
 }
 
 .card-action a.wiki__link {
@@ -201,6 +202,16 @@ section.skill__details {
 
 .card-action i.fa-arrow-right {
   font-weight: 100;
+}
+
+h2.under__text::after {
+  content: '';
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 2.5px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00cec9), to(#fd79a8));
+  background-image: linear-gradient(to right bottom, #00cec9, #fd79a8);
 }
 
 .mtop4 {
@@ -241,6 +252,9 @@ section.skill__details {
   }
   .skill__details h2 {
     font-size: 3rem !important;
+  }
+  .card .card-image {
+    height: 14rem;
   }
 }
 /*# sourceMappingURL=skills.css.map */

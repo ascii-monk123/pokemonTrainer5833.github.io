@@ -153,11 +153,12 @@ section.skill__details {
   &:hover {
     transform: translateY(-1rem);
   }
+  margin: 30px;
 }
 .card {
   .card-image {
     overflow: hidden;
-    height: 13rem;
+    height: 17rem;
   }
 }
 //action
@@ -190,6 +191,15 @@ section.skill__details {
     font-weight: 100;
   }
 }
+
+h2.under__text::after {
+  content: '';
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 2.5px;
+  background-image: linear-gradient(to right bottom, $color-blue, $color-pink);
+}
 //margin containers
 .mtop4 {
   margin-top: 5rem;
@@ -220,6 +230,11 @@ section.skill__details {
     margin-top: 0.3rem !important;
     h2 {
       font-size: 3rem !important;
+    }
+  }
+  .card {
+    .card-image {
+      height: 14rem;
     }
   }
 }

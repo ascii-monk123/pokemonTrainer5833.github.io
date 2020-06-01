@@ -3,4 +3,5 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   //initializing the aos
   AOS.init();
+  const a = 1;
 });
