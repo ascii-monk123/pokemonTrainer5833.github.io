@@ -192,6 +192,11 @@ span.number__text {
           transform: translateY(-4px);
 }
 
+.projects__wrapper {
+  width: 100%;
+  margin-top: 10rem;
+}
+
 @media (max-width: 600px) {
   .projects__container {
     padding: 1rem 2rem;
@@ -202,6 +207,9 @@ span.number__text {
 }
 
 @media (max-width: 500px) {
+  .projects__header {
+    height: 90vh;
+  }
   .email__btn__container {
     display: none;
   }
