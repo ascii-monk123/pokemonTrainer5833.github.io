@@ -5,6 +5,9 @@ body {
   font-family: 'Montserrat',sans-serif;
   position: relative;
   width: 100%;
+}
+
+header {
   overflow: hidden;
 }
 
@@ -15,6 +18,7 @@ body {
 .projects__header .hero__img--text {
   color: #8892b0;
   margin-top: 10rem !important;
+  font-weight: 600;
 }
 
 .social__link {
@@ -97,7 +101,8 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
 }
 
 .sidenav-trigger {
-  font-size: 3.5rem !important;
+  font-size: 2.5rem !important;
+  color: #00E676;
 }
 
 .email__btn__container {
@@ -134,9 +139,82 @@ nav ul a.nav__links:hover, nav ul a.nav__links:active {
   background-color: #fff;
 }
 
+.btn__container {
+  width: 100%;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.btn__container a {
+  background-color: transparent;
+  border: 1px solid #00E676;
+  color: #00E676;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn__container a:hover {
+  background-color: #00E676;
+  color: #fff;
+}
+
+.projects__container {
+  padding: 5rem 5rem;
+}
+
+.projects__container h3 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: justify;
+  width: 100%;
+  display: inline-block;
+}
+
+.projects__container h3:after {
+  content: '';
+  display: inline-block;
+  width: 20%;
+  margin-left: 10px;
+  height: 1px;
+  background-color: #8892b0;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+span.number__text {
+  color: #00E676;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  font-weight: 400;
+  line-height: 10px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+  .projects__container {
+    padding: 1rem 2rem;
+  }
+  .projects__container h3 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 500px) {
   .email__btn__container {
     display: none;
+  }
+  .projects__container {
+    padding: 0;
+  }
+  .projects__container h3 {
+    padding: 0px 3px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .projects__container .number__text {
+    margin-left: 5px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

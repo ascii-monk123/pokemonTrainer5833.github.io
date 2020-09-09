@@ -14,6 +14,9 @@ body{
     font-family:'Montserrat',sans-serif;
     position: relative;
     width:100%;
+    
+}
+header{
     overflow: hidden;
 }
 .projects__header{
@@ -21,6 +24,7 @@ body{
     .hero__img--text{
         color:$color-grey;
         margin-top:10rem !important;
+        font-weight:600;
     }
 }
 
@@ -87,7 +91,8 @@ body{
   }
 
   .sidenav-trigger{
-      font-size:3.5rem !important;
+      font-size:2.5rem !important;
+      color:$color-green;
   }
 
   .email__btn__container{
@@ -119,10 +124,82 @@ body{
       
       
   }
+.btn__container{
+    width:100%;
+    text-align:center;
+    margin-top:7rem;
+   a{
+        background-color:transparent;
+        border:1px solid $color-green;
+        color:$color-green;
+        transition:all 0.5s;
+        &:hover{
+          background-color:$color-green;
+          color:#fff;
+        }
+    }
+}
 
 
+//the projects container
+
+.projects__container{
+
+    padding:5rem 5rem;
+
+    h3{
+        font-weight:600;
+        color:$color-white;
+        font-size:1.5rem;
+        text-align:justify;
+        width:100%;
+        display:inline-block;
+ 
+    
+        &:after{
+        content:'';
+        display:inline-block;
+        width:20%;
+        margin-left:10px;
+        height:1px;
+
+        background-color:$color-grey;
+        transform:translateY(-4px);
+       }
+    }
+}
+span.number__text{
+    color:$color-green;
+    font-size:1.2rem;
+    margin-right:20px;
+    font-weight:400;
+    line-height:10px;
+    transform:translateY(-4px);
+}
+
+
+@media(max-width:600px){
+    .projects__container{
+        padding:1rem 2rem;
+        h3{
+            font-size:20px;
+        }
+    }
+}
   @media(max-width:500px){
       .email__btn__container{
           display:none;
       }
+      .projects__container{
+          padding:0;
+          h3{
+              padding:0px 3px;
+              font-size:15px;
+              text-align:center;
+          }
+          .number__text{
+              margin-left:5px;
+          }
+      }
   }
+
